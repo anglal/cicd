@@ -1,0 +1,5 @@
+[test-servers] 
+3.142.133.146 ansible_ssh_private_key_file=/home/ubuntu/jenkinskeypair.pem ansible_user=ubuntu 
+
+#[prod-servers]
+#18.216.187.97 ansible_ssh_private_key_file=/home/ubuntu/ansiblekeypair.pem ansible_user=ubuntu 
