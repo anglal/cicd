@@ -1,9 +1,11 @@
 ---
-- hosts: test-servers
+- name: configure test server
+  hosts: test-server
   become: true
+
   tasks:
-  - name: update apt
-    command: apt-get update
+  - name: update repo
+    command: apt update
 
   - name: install docker
     command: apt install -y docker.io
@@ -11,5 +13,5 @@
   - name: start docker service
     command: systemctl start docker
 
-  - name: deploy application
-    command: docker run -itd -p 8081:8081 elexad/capstone-srpingboot:1
+  - name: deploy insure-me-app
+    command: docker run -itd -p 8085:8081 shubhamkushwah123/insure-me-app:1.0 
