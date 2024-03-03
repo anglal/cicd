@@ -1,3 +1,2 @@
-[test-servers] 
-
+[test-servers]
 3.142.133.146 ansible_ssh_private_key_file=/home/ubuntu/ansiblekeypair.pem ansible_user=ubuntu 
