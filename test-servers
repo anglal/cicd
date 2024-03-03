@@ -1,0 +1,2 @@
+[test-servers] 
+3.16.89.122 ansible_ssh_private_key_file=/home/ubuntu/capstone.pem ansible_user=ubuntu
